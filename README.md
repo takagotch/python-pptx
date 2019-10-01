@@ -36,21 +36,32 @@ class DescribePresentation(object):
     prs.slide_width = selid_width
     assert prs._element.xml == expected_xml
     
-  def it_knows_its_part():
+  def it_knows_its_part(self, part_fixture):
+    prs, prs_part_ = part_fixture
+    assert prs.part is prs_parts_
   
-  def it_provides_access_to_its_core_properties():
+  def it_provides_access_to_its_core_properties(self, core_props_fixture):
+    prs, core_properties_ = core_props_fixture
+    assert prs.core_properties is core_properties_
   
-  def it_provides_access_to_its_notes_master():
+  def it_provides_access_to_its_notes_master(self, notes_master_fixture):
+    prs, notes_master_ = notes_master_fixture
+    assert prs.notes_master is notes_master_
   
   def it_providers_access_to_its_slides(self, slides_fixture):
+    
   
   def it_provides_access_to_its_slide_layouts(self, layouts_fixture):
   
+  
   def it_provides_access_to_its_slide_master(self, master_fixture):
+  
   
   def it_provides_access_to_its_slide_masters():
   
+  
   def it_can_save_the_presentation_to_a_file():
+  
   
   @pytest.fixture
   def core_props_fixture(self, prs_part__, core_properties_):

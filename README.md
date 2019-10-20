@@ -96,26 +96,34 @@ class DescribePresentation(object):
   @pytest.fixture()
   def sld_width_get_fixture():
   
+  
   @pytest.fixture()
   def sld_width_set_fixture():
+  
   
   @pytest.fixture()
   def slides_fixture(self, request, part_prop_, Slides_, slides_):
   
+  
   @pytest.fixture
   def core_properties_(self, request):
+  
   
   @pytest.fixture
   def masters_prop_():
   
+  
   @pytest.fixture
   def notes_master_():
   
-  @pytest.fixture
-  def part_prop_():
   
   @pytest.fixture
   def part_prop_():
+  
+  
+  @pytest.fixture
+  def part_prop_():
+  
   
   @pytest.fixture
   def prs_part_():
